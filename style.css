@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: Arial, sans-serif;
+  }
+
+  /*
+::-webkit-scrollbar {
+    display: none;
+  }
+  */
+
+body {
+    font-size: 2vh;
+    background-image: url("./images/newWoodBackground2.jpg");
+    background-size: 105% 120%;
+    display: block;
+    height: 97vh;
+    text-align: center;
+  }
+
+  ::backdrop {
+    background-image: url("./images/newWoodBackground2.jpg");
+    background-size: 105% 120%;
+    display: block;
+  }  
+
+@media screen and (orientation:portrait) {
+
+    *{
+        z-index: 2;
+        color: rgb(241, 237, 231);
+    }
+
+    #logoDiv{
+        /*
+        border-bottom: 1vh solid rgb(41, 41, 41);
+        background-color: rgba(0, 0, 0, 0.5);
+        */
+        max-width: 100%;
+        height: 16vh;
+        padding: 6% 0% 0% 0%;
+        
+    }
+
+    img[src="./images/logo.png"]{
+        display: block;
+        margin: auto;
+        height: auto;
+        max-width: 90%;
+    }
+
+    #listContainer{
+        width: 85%;
+        height: 69vh;
+        border: 4px outset rgb(122, 113, 113);
+        padding: 5% 0%;
+        margin: auto;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        overflow: scroll;
+    }
+    
+    #listTitle{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: underline;
+        font-size: 3.5vh;
+        margin-bottom: 2%;
+        text-shadow: 4px 4px rgb(13, 13, 13);
+    }
+
+    #wellStockList{
+        width: 70%;
+        margin: auto;
+        font-size: 2vh;
+        padding-right: 6%;
+    }
+
+    li{
+        text-align: left;
+        margin: 5% 0;
+        width: 750%;
+    }
+
+}
